@@ -37,19 +37,19 @@ Example BTC Lightning JSON:
     {
         "name": "author",
         "type": "node",
-        "address": "036557ea56b3b86f08be31bcd2557cae8021b0e3a9413f0c0e52625c6696972e57",
+        "address": "node_address",
         "split": 67
     },
     {
       "name": "developer",
       "type": "node",
-      "address": "036557ea56b3b86f08be31bcd2557cae8021b0e3a9413f0c0e52625c6696972e57",
+      "address": "node_address",
       "split": 32
     },
     {
       "name": "hosting",
       "type": "node",
-      "address": "036557ea56b3b86f08be31bcd2557cae8021b0e3a9413f0c0e52625c6696972e57",
+      "address": "node_address",
       "split": 1
     }
   ]
