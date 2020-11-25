@@ -1,9 +1,13 @@
 # The Meta/Link Value HTML Property
-`<meta property="value:[type]" content="value_[type].[json|xml]">`
+```
+<meta property="value:[type]" content="value_[type].[json|xml]" />
+```
 
 or  
 
-`<link rel="value:[type]" type="[json|xml]" href="./value.[json|xml]" />`
+```
+<link rel="value:[type]" type="[json|xml]" href="./value_[type].[json|xml]" />
+```
 
 ## Goal
 The future of monetizing content has been moving towards a user supported content model (known as *"value for value"* 
@@ -20,14 +24,20 @@ more common forms of monetizing content (eg. advertising or pay walls). The cont
 should be free to all visitors with only a suggestion of the importance in supporting free and non-censored content.
 
 The properties designate the type of payment method so that supporting browsers or extensions can quickly decide on 
-how to handle the `content` URL.
+how to handle the `content|href` URL.
 
 ## Example Usage
 Suggested format(*), with same server url enforcement for security purposes:
 ```html
-<meta property="value:lightning" content="//yoursite.com/value_lightning.json">
-<meta property="value:paypal" content="//yoursite.com/value_paypal.json">
+<meta property="value:lightning" content="//yoursite.com/value_lightning.json" />
+<meta property="value:paypal" content="//yoursite.com/value_paypal.xml" />
 ```
+or
+```html
+<link rel="value:lightning" type="json" href="./value_lightning.json" />
+<link rel="value:paypal" type="xml" href="//yoursite.com/value_paypal.xml" />
+```
+
 (*) Multiple value tags can be added.
 
 Example BTC Lightning JSON:
