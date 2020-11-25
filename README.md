@@ -1,5 +1,9 @@
-# The Meta Value HTML Property
-`<meta property="value:[type]" content="[value_(type).json/xml]">`
+# The Meta/Link Value HTML Property
+`<meta property="value:[type]" content="value_[type].[json|xml]">`
+
+or  
+
+`<link rel="value:[type]" type="[json|xml]" href="./value.[json|xml]" />`
 
 ## Goal
 The future of monetizing content has been moving towards a user supported content model (known as *"value for value"* 
